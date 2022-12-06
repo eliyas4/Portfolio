@@ -2,8 +2,55 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-colour: black;
+  --secondary-colour: aliceblue;
+}
+
+h1{
+  display: inline-block;
+  font-family: 'serif';
+  margin-left: 5px;
+
+}
+
+h1:nth-child(even) {
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 110px;
+
+
+}
+
 header {
-  background-color: aqua;
+  background-color: var(--primary-colour);
+  color: var(--secondary-colour);
+  font-size: 20px;
+  border-bottom: 1mm solid rgba(240, 248, 255, 0.666); 
+}
+
+nav {
+  display: flex;
+  margin-left: 20px;
+  justify-content: center;
+
+  
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-left: 70px;
+}
+
+
+nav a {
+  color: var(--secondary-colour);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
 }
 
 body {
@@ -11,61 +58,8 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: aquamarine;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  justify-content: center;
-  display: flex;
-}
-
-p {
-  margin: 0;
-}
-
-.page-wrapper {
-  display: grid;
-  margin: 0px 5%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 400px 400px 400px;
-  grid-template-areas: 
-  "about contact"
-  "p1 p2"
-  "p3 p4";
-}
-
-#contact-me {
-  grid-area: contact;
+  background-color: var(--primary-colour);
 }
 
 
-#project1 {
-  grid-area: p1;
-  background-image: url("../images/02-portfolio-1.jpg");
-}
-
-
-#project2 {
-  grid-area: p2;
-  background-image: url("../images/02-portfolio-2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
-
-#project3 {
-  grid-area: p3;
-  background-image: url("../images/02-portfolio-3.jpg");
-}
-
-#project4 {
-  grid-area: p4;
-
-}
 
