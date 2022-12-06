@@ -18,8 +18,6 @@ h1:nth-child(even) {
   font-size: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-left: 110px;
-
-
 }
 
 header {
@@ -33,8 +31,6 @@ nav {
   display: flex;
   margin-left: 20px;
   justify-content: center;
-
-  
 }
 
 nav ul{
@@ -43,7 +39,6 @@ nav ul{
   align-items: center;
   margin-left: 70px;
 }
-
 
 nav a {
   color: var(--secondary-colour);
@@ -60,6 +55,5 @@ body {
   line-height: 1.5;
   background-color: var(--primary-colour);
 }
-
 
 
