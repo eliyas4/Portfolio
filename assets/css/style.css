@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  list-style: none;
 }
 
 :root {
@@ -7,24 +8,25 @@
   --secondary-colour: aliceblue;
 }
 
-h1{
-  display: inline-block;
-  font-family: 'serif';
-  margin-left: 5px;
-
-}
-
-h1:nth-child(even) {
-  font-size: 30px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-left: 110px;
-}
-
 header {
   background-color: var(--primary-colour);
   color: var(--secondary-colour);
   font-size: 20px;
   border-bottom: 1mm solid rgba(240, 248, 255, 0.666); 
+}
+
+h1{
+  display: inline-block;
+  font-family: 'serif';
+  margin-left: 5px;
+}
+
+h1:nth-child(even) {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 110px;
 }
 
 nav {
@@ -56,20 +58,50 @@ body {
   background-color: var(--primary-colour);
 }
 
-.flex-container {
-  display: flex;
-  justify-content: space-between;
+.contentGrid {
+  display: grid;
   margin-right: 15px;
+  grid-template-rows: 30%;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: 
+  "image profile contact";
 }
 
-img {
-  display: flex;
-  height: 400px;
+#my-picture {
+  grid-area: image;
+  height: 400px; 
 }
 
-h2 {
-  display: flex;
-  color: var(--secondary-colour);
+#profile {
+  grid-area: profile;
+}
+
+#contact-info {
+  grid-area: contact;
+  display: block;
+  text-align: center;
   justify-content: center;
-  align-items: flex-start;
+  color: var(--secondary-colour);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+li {
+  padding: 5px;
+}
+
+article h2 {
+  font-family:'Times New Roman', Times, serif;
+  color: var(--secondary-colour);
+  font-size: 50px;
+  margin-top: 0px;
+  margin-left: 30px;
+  margin-bottom: -25px;
+}
+
+article p{
+  color: var(--secondary-colour);
+  margin-left: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
