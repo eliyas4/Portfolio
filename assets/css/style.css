@@ -80,6 +80,7 @@ body {
   grid-area: contact;
   display: block;
   text-align: center;
+  padding-left: 20px;
   justify-content: center;
   color: var(--secondary-colour);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -87,6 +88,12 @@ body {
 
 li {
   padding: 5px;
+  text-align: center;
+  border: 5px double var(--secondary-colour);
+}
+
+address {
+  
 }
 
 article h2 {
