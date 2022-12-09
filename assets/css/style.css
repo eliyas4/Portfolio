@@ -53,7 +53,7 @@ nav a {
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  /*background-color: var(--primary-colour);*/
+  background-color: var(--primary-colour);
 }
 
 .contentGrid {
@@ -108,11 +108,11 @@ article p{
 
 #projectsGrid {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 70vh 30vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
   "study study study"
-  "horiseon surf calc"
+  "horiseon milan calc"
   ;
 }
 
@@ -120,29 +120,42 @@ article p{
 
 #studyGuide {
   grid-area: study;
+  background-image: url("../../images/Capture\ \(2\).PNG");
 }
 
 #horiseon {
   grid-area: horiseon;
-  background-image: url("./images/digital-marketing-meeting (2).jpg")
+  background-image: url("../../images/digital-marketing-meeting\ \(2\).jpg")
 }
 
-#surf {
-  grid-area: surf;
-  background-image: url("./images/ (2).jpg")
+#milan {
+  grid-area: milan;
+  background-image: url("../../images/rafael-leao-2\ \(2\).jpg")
 }
 
 #calculator {
   grid-area: calc;
-  background-image: url("./images/02-portfolio-4.jpg")
+  background-image: url("../../images/H2x1_NSwitchDS_Calculator.jpg")
 }
 
 .projectsGridArea {
-  background-position: center;
+
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 5px;
+  margin: 10px;
   cursor: pointer;
   display: grid;
   align-content: end;
+}
+
+#projectsTitle {
+  color: var(--secondary-colour);
+  text-align: center;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.heading {
+  color: var(--secondary-colour);
+
 }
