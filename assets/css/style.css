@@ -51,11 +51,9 @@ nav a {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: var(--primary-colour);
+  /*background-color: var(--primary-colour);*/
 }
 
 .contentGrid {
@@ -92,14 +90,10 @@ li {
   border: 5px double var(--secondary-colour);
 }
 
-address {
-  
-}
-
 article h2 {
   font-family:'Times New Roman', Times, serif;
   color: var(--secondary-colour);
-  font-size: 50px;
+  font-size: 70px;
   margin-top: 0px;
   margin-left: 30px;
   margin-bottom: -25px;
@@ -109,6 +103,24 @@ article p{
   color: var(--secondary-colour);
   margin-left: 5px;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-size: 25px;
 }
 
+#studyGuide {
+  grid-area: study;
+}
+
+#horiseon {
+  grid-area: horiseon;
+  background-image: url("./images/")
+}
+
+#surf {
+  grid-area: surf;
+  background-image: url("../
+}
+
+#calculator {
+  grid-area: calc;
+  background-image: url("../
+}
