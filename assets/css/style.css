@@ -106,21 +106,43 @@ article p{
   font-size: 25px;
 }
 
+#projectsGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "study study study"
+  "horiseon surf calc"
+  ;
+}
+
+
+
 #studyGuide {
   grid-area: study;
 }
 
 #horiseon {
   grid-area: horiseon;
-  background-image: url("./images/")
+  background-image: url("./images/digital-marketing-meeting (2).jpg")
 }
 
 #surf {
   grid-area: surf;
-  background-image: url("../
+  background-image: url("./images/ (2).jpg")
 }
 
 #calculator {
   grid-area: calc;
-  background-image: url("../
+  background-image: url("./images/02-portfolio-4.jpg")
+}
+
+.projectsGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
 }
