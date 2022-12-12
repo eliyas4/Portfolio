@@ -90,6 +90,10 @@ li {
   border: 5px double var(--secondary-colour);
 }
 
+nav li:hover {
+  box-shadow: inset 0px 0px 15px blue, 00px 0 30px blue;
+}
+
 article h2 {
   font-family:'Times New Roman', Times, serif;
   color: var(--secondary-colour);
@@ -121,6 +125,7 @@ article p{
   grid-area: study;
   background-image: url("../../images/Capture\ \(2\).PNG");
   object-fit: cover;
+
 
 } 
 
@@ -157,8 +162,20 @@ article p{
   text-align: center;
   font-size: 50px;
   margin-top: 50px;
-  margin-bottom: 150px;
 }
 
 .card-heading {
+  display: flex;
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card:hover, 
+.project-card:hover .card-heading {
+  box-shadow: inset 0px 0px 8px blue, 0 0 15px blue;
 }
