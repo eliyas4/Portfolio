@@ -124,7 +124,7 @@ article p{
 #studyGuide {
   grid-area: study;
   background-image: url("../../images/Capture\ \(2\).PNG");
-  object-fit: cover;
+
 
 
 } 
