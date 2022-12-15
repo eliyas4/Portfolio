@@ -9,6 +9,7 @@
   --glow-colour: blue;
 }
 
+/* The styles for the header and nav bar */
 header {
   background-color: var(--primary-colour);
   color: var(--secondary-colour);
@@ -57,6 +58,7 @@ body {
   background-color: var(--primary-colour);
 }
 
+/*  */
 .contentGrid {
   display: grid;
   margin-right: 15px;
