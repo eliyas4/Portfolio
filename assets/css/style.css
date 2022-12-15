@@ -6,6 +6,7 @@
 :root {
   --primary-colour: black;
   --secondary-colour: aliceblue;
+  --glow-colour: blue;
 }
 
 header {
@@ -35,7 +36,7 @@ nav {
   justify-content: center;
 }
 
-nav ul{
+nav ul {
   display: flex;
   list-style: none;
   align-items: center;
@@ -91,7 +92,7 @@ li {
 }
 
 nav li:hover {
-  box-shadow: inset 0px 0px 15px blue, 00px 0 30px blue;
+  box-shadow: inset 0px 0px 15px var(--glow-colour), 00px 0 30px var(--glow-colour);
 }
 
 article h2 {
@@ -154,6 +155,7 @@ article p{
   cursor: pointer;
   display: grid;
   align-content: end;
+  text-decoration: none;
 }
 
 #projectsTitle {
@@ -177,5 +179,66 @@ article p{
 
 .project-card:hover, 
 .project-card:hover .card-heading {
-  box-shadow: inset 0px 0px 8px blue, 0 0 15px blue;
+  box-shadow: inset 0px 0px 8px var(--glow-colour), 0 0 15px var(--glow-colour);
+}
+
+
+@media only screen and (max-width: 1300px) {
+  #projectsGrid {
+    grid-template-rows: 400px 400px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "study horiseon"
+    "milan calc"
+    ;
+  }
+  h1 {
+    display: none;
+  }
+  h1:nth-child(even) {
+    font-size: 30px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  h1:nth-child(even) {
+  margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  h1:nth-child(even) {
+    display: none;
+  }
+  nav ul {
+  margin-left: 0;
+  }
+  nav {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .contentGrid {
+    grid-template-rows: 30% 30% 30%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "profile"
+    "image"
+    "contact";
+  }
+  #projectsGrid {
+    grid-template-rows: 400px 400px 400px 400px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "study" 
+    "horiseon"
+    "milan" 
+    "calc"
+  }
 }
