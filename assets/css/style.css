@@ -58,7 +58,8 @@ body {
   background-color: var(--primary-colour);
 }
 
-/*  */
+/* This styles the first portion of the portfolio, 
+the main section is split into two grids */
 .contentGrid {
   display: grid;
   margin-right: 15px;
@@ -113,6 +114,16 @@ article p{
   font-size: 25px;
 }
 
+/* The second grid of the portfolio is now styled */
+#projectsTitle {
+  display: block;
+  color: var(--secondary-colour);
+  text-align: center;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+/* The second grid containing previous projects is designed here */
 #projectsGrid {
   display: grid;
   grid-template-rows: 75vh 50vh;
@@ -123,13 +134,9 @@ article p{
   ;
 }
 
-
 #studyGuide {
   grid-area: study;
   background-image: url("../../images/Capture\ \(2\).PNG");
-
-
-
 } 
 
 #horiseon {
@@ -160,14 +167,7 @@ article p{
   text-decoration: none;
 }
 
-#projectsTitle {
-  display: block;
-  color: var(--secondary-colour);
-  text-align: center;
-  font-size: 50px;
-  margin-top: 50px;
-}
-
+/* This styles the card heading and the glow effects when they are */
 .card-heading {
   display: flex;
   background-color: rgba(0,0,0,0.7);
@@ -184,7 +184,7 @@ article p{
   box-shadow: inset 0px 0px 8px var(--glow-colour), 0 0 15px var(--glow-colour);
 }
 
-
+/* This media query helps to resize content to fit a large screen */
 @media only screen and (max-width: 1300px) {
   #projectsGrid {
     grid-template-rows: 400px 400px;
@@ -206,6 +206,7 @@ article p{
   }
 }
 
+/* Media query for midsize screens */
 @media only screen and (max-width: 1200px) {
   h1:nth-child(even) {
   margin-left: 10px;
@@ -225,6 +226,7 @@ article p{
   }
 }
 
+/* Media query for small screens */
 @media only screen and (max-width: 950px) {
   .contentGrid {
     grid-template-rows: 30% 30% 30%;
